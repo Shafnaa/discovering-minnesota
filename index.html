@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discovering Minnesota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/script/tailwind.config.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="fixed w-full top-0 z-50 overflow-hidden">
+      <nav class="border-gray-200 light text-black px-2 lg:px-20">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 md:py-6"
+        >
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="w-fit mx-auto" id="navbar-default">
+            <ul
+              class="w-fit font-medium text-base leading-4 text-center text-white flex flex-row p-1.5 space-x-2.5 mx-auto bg-dark-blue/30 rounded-lg"
+            >
+              <li class="p-2.5 rounded bg-white text-dark-blue" active>
+                <a href="#" class="block w-[82px]">Home</a>
+              </li>
+              <li class="p-2.5 rounded">
+                <a href="#" class="block w-[82px]">Services</a>
+              </li>
+              <li class="p-2.5 rounded">
+                <a href="#" class="block w-[82px]">About Us</a>
+              </li>
+              <li class="p-2.5 rounded">
+                <a href="#" class="block w-[82px]">Information</a>
+              </li>
+              <li class="p-2.5 rounded">
+                <a href="#" class="block w-[82px]">Blog</a>
+              </li>
+              <li class="p-2.5 rounded">
+                <a href="#" class="block w-[82px]">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="w-full h-screen flex justify-center items-center text-white"
+      style="
+        background: linear-gradient(
+            0deg,
+            #131824 -33.92%,
+            rgba(19, 24, 36, 0) 100%
+          ),
+          url('./assets/media/hero.png');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="w-fit max-w-[940px] mx-auto text-center">
+        <img src="./assets/media/logo.svg" alt="" class="mx-auto" />
+        <h1 class="font-bold text-7xl mb-2.5">
+          Discover the wonders of Minnesota with us
+        </h1>
+        <p class="text-lg">
+          Our mission is to create extraordinary experiences that ignite your
+          sense of adventure, broaden your horizons, and leave you with memories
+          that last a lifetime.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="w-full bg-dark-blue text-white">
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/lakes.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-lakes">Lakes</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Minnesota offers some of the best freshwater fishing in the
+              country, from big lakes to scenic trout streams and the mighty
+              Missisipi.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/resorts.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-resorts">Resorts</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Let the stresses of everyday life melt away as you relax at one of
+              Minnesota's many resorts, where you can enjoy pristine lakes, golf
+              courses, guided fishing excursions.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/parks.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-parks">Parks</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Minnesota is full of unforgettable campsites where you can fall
+              asleep under a stellar night sky and wake to the sound of loons.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/hiking.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-hiking">Hiking</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Minnesota is Mother Nature's home state, and her influence is
+              everywhere, from native prairies in the southwestern corner of the
+              state to the mountainous.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/fishing.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-fishing">Fishing</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Let the stresses of everyday life melt away as you relax at one of
+              Minnesota's many resorts, where you can enjoy pristine lakes, golf
+              courses, guided fishing excursions.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-4/6 h-screen ml-auto"
+        style="
+          background: url('./assets/media/skiing.png');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+          style="
+            background: linear-gradient(
+                0deg,
+                rgba(19, 24, 36, 0.5) 0%,
+                rgba(19, 24, 36, 0.5) 100%
+              ),
+              linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="flex flex-col items-end text-right">
+            <div class="text-[54px] leading-none mb-5">
+              <h2 class="font-medium">
+                Explore the best <span class="text-skiing">Skiing</span> of
+              </h2>
+              <h2 class="font-[inter]">Minnesota activities</h2>
+            </div>
+            <p class="max-w-[480px] text-2xl">
+              Let the stresses of everyday life melt away as you relax at one of
+              Minnesota's many resorts, where you can enjoy pristine lakes, golf
+              courses, guided fishing excursions.
+            </p>
+          </div>
+
+          <a
+            href=""
+            class="w-24 h-24 flex justify-center items-center bg-black/20 rounded-full"
+          >
+            <img src="./assets/media/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="p-5">
+      <div class="mx-auto pb-12">
+        <div
+          class="min-h-[520px] flex flex-col justify-between items-end text-white text-right rounded-lg p-12 mb-12"
+          style="
+            background: linear-gradient(
+                128deg,
+                #e57929 -224.82%,
+                rgba(229, 121, 41, 0) 76.39%
+              ),
+              linear-gradient(
+                180deg,
+                rgba(19, 24, 36, 0.8) -33.92%,
+                rgba(19, 24, 36, 0) 100%
+              ),
+              url('./assets/media/about.png');
+            background-size: cover;
+            background-position: right;
+          "
+        >
+          <h3 class="font-bold text-[54px] leading-none">
+            Trust Minnesota <br />
+            <span class="font-medium text-4xl">
+              for seamless holiday <br />
+              Arrangements
+            </span>
+          </h3>
+          <img src="./assets/media/about.svg" alt="" class="h-32" />
+        </div>
+        <div class="max-w-screen-xl mx-auto">
+          <h2 class="max-w-[858px] font-bold text-[54px] leading-none mb-10">
+            Create extraordinary experiences that ignite your sense of adventure
+            and leave you with memories that last a lifetime
+          </h2>
+
+          <div
+            class="max-w-[992px] flex flex-row space-x-12 font-medium text-lg ml-auto"
+          >
+            <p>
+              We bundle up, head out and make the most of this magical season,
+              whether it's on our thousands of miles of ski and snowshoe trail
+              on top of a frozen lake
+            </p>
+            <p>
+              From experiencing our great outdoors to urban adventures,
+              Minnesota is full of unique vacation opportunities for every
+              traveler. Whether you're traveling as a family, with friends, or
+              solo, you'll find information on what to do, where to stay, and
+              more!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-white px-36 pt-16 pb-12"
+      style="
+        background: linear-gradient(
+            140deg,
+            #131824 30%,
+            rgba(19, 24, 36, 0.02) 100.99%
+          ),
+          linear-gradient(220deg, #131824 30%, rgba(19, 24, 36, 0.02) 100.99%),
+          url('./assets/media/footer.png');
+        background-position: top;
+        background-size: cover;
+      "
+    >
+      <div
+        class="flex flex-row items-center justify-center space-x-8 font-bold text-[54px] mx-auto mb-5"
+      >
+        <h2 class="w-[300px] text-right">Discovering</h2>
+        <img src="./assets/media/logo.svg" alt="" class="h-32" />
+        <h2 class="w-[300px]">Minnesota</h2>
+      </div>
+      <div
+        class="max-w-screen-xl flex flex-row justify-between text-center border-y-4 border-gray py-8 mb-8"
+      >
+        <div class="max-w-[260px] flex flex-col space-y-8">
+          <h4 class="font-bold text-2xl">Company</h4>
+          <ul class="flex flex-col space-y-4 text-lg">
+            <li>121 7th Place E, Suite 360 St. Paul, MN 55101</li>
+            <li>
+              <a href="">+1-651-556-8465</a>
+            </li>
+            <li>
+              <a href="">discovering@minnesota.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="max-w-[260px] flex flex-col space-y-8">
+          <h4 class="font-bold text-2xl">Others</h4>
+          <ul class="flex flex-col space-y-4 text-lg">
+            <li>Privacy Policy</li>
+            <li>Cookie Settings</li>
+            <li>Terms and Condition</li>
+            <li>GDPR FaQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-fit mx-auto">
+        <div class="flex flex-row justify-center space-x-6 mb-8">
+          <a href="">
+            <img src="./assets/media/Facebook.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/media/Twitter.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/media/Linkedin.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./assets/media/Instagram.svg" alt="" />
+          </a>
+        </div>
+        <div>©Copyright Discovering Minnesota 2023</div>
+      </div>
+    </footer>
+  </body>
+</html>
