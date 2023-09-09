@@ -32,5 +32,14 @@ body {
 }
 
 .active {
-  color: black;
+  color: white !important;
+}
+
+.active div h2 {
+  font-size: 52px !important;
+}
+
+.active div.w-16.h-16 {
+  width: 100px !important;
+  height: 100px !important;
 }
