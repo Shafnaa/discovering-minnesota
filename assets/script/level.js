@@ -1,10 +1,11 @@
 const services = document.querySelector("#services");
 const sections = services.querySelectorAll(".h-screen");
-const navLi = services.querySelector("#navigation").querySelectorAll("div");
+const nav = services.querySelector("#navigation");
+const navLi = nav.querySelectorAll("div");
 
 services.onscroll = () => {
+  const sectionScrolled = (services.scrollTop / services.scrollHeight) * 100;
   var current = "";
-  var state = false;
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
@@ -13,16 +14,12 @@ services.onscroll = () => {
     }
   });
 
+  nav.style.transform = `translateY(-${sectionScrolled}%)`;
+
   navLi.forEach((li) => {
     li.classList.remove("active");
-    if (!state && !li.classList.contains(current)) {
-      li.classList.add("hidden");
-    } else {
-      li.classList.remove("hidden");
-    }
     if (li.classList.contains(current)) {
       li.classList.add("active");
-      state = true;
     }
   });
 };

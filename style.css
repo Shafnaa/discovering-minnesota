@@ -19,7 +19,6 @@
 body {
   position: relative;
   font-family: "Satoshi";
-  scroll-snap-type: y proximity;
 }
 
 .scrollbar-hide {
@@ -42,4 +41,9 @@ body {
 .active div.w-12.h-12 {
   width: 100px !important;
   height: 100px !important;
+}
+
+.active-nav {
+  background: white;
+  color: #131824;
 }
