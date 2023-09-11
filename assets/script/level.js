@@ -1,7 +1,6 @@
 const services = document.querySelector("#services");
 const sections = services.querySelectorAll(".h-screen");
 const navLi = services.querySelector("#navigation").querySelectorAll("div");
-console.log(navLi);
 
 services.onscroll = () => {
   var current = "";

@@ -39,7 +39,7 @@ body {
   font-size: 52px !important;
 }
 
-.active div.w-16.h-16 {
+.active div.w-12.h-12 {
   width: 100px !important;
   height: 100px !important;
 }
