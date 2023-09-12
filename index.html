@@ -23,12 +23,16 @@
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 md:py-6"
         >
+          <a href="#" class="md:hidden">
+            <img src="./assets/media/logo.svg" alt="" class="w-10 h-10" />
+          </a>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
+            id="navbar-button"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -47,9 +51,9 @@
               />
             </svg>
           </button>
-          <div class="w-fit mx-auto" id="navbar-default">
+          <div class="hidden md:block w-fit md:mx-auto" id="navbar-default">
             <ul
-              class="w-fit font-medium text-base leading-4 text-center text-white flex flex-row p-1.5 space-x-2.5 mx-auto bg-dark-blue/30 rounded-lg"
+              class="w-fit font-medium text-base leading-4 text-center text-white flex flex-col md:flex-row p-1.5 gap-2.5 mx-auto bg-dark-blue/30 rounded-lg"
             >
               <li class="p-2.5 rounded" active>
                 <a href="#home" class="block w-[82px]">Home</a>
@@ -61,13 +65,13 @@
                 <a href="#about" class="block w-[82px]">About Us</a>
               </li>
               <li class="p-2.5 rounded">
-                <a href="#" class="block w-[82px]">Information</a>
+                <a href="#information" class="block w-[82px]">Information</a>
               </li>
               <li class="p-2.5 rounded">
-                <a href="#" class="block w-[82px]">Blog</a>
+                <a href="#blog" class="block w-[82px]">Blog</a>
               </li>
               <li class="p-2.5 rounded">
-                <a href="#" class="block w-[82px]">Contact Us</a>
+                <a href="#contact" class="block w-[82px]">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -94,11 +98,15 @@
         id="home"
       >
         <div class="w-fit max-w-[940px] mx-auto text-center">
-          <img src="./assets/media/logo.svg" alt="" class="mx-auto" />
-          <h1 class="font-bold text-7xl mb-2.5">
+          <img
+            src="./assets/media/logo.svg"
+            alt=""
+            class="h-36 md:h-44 mx-auto"
+          />
+          <h1 class="font-bold text-3xl md:text-7xl mb-2.5">
             Discover the wonders of Minnesota with us
           </h1>
-          <p class="text-lg">
+          <p class="text-xs md:text-lg">
             Our mission is to create extraordinary experiences that ignite your
             sense of adventure, broaden your horizons, and leave you with
             memories that last a lifetime.
@@ -111,9 +119,9 @@
         class="scrollbar-hide relative w-full h-screen snap-y snap-mandatory overflow-auto bg-dark-blue text-white snap-center"
         id="services"
       >
-        <div class="sticky w-fit h-0 top-24 ml-20">
+        <div class="sticky w-fit top-0 h-0 ml-20">
           <div
-            class="scrollbar-hide flex flex-col gap-8 text-white"
+            class="scrollbar-hide h-screen flex flex-col justify-center gap-8 text-white"
             id="navigation"
           >
             <div class="lakes flex items-center gap-8 text-lakes active">
@@ -433,7 +441,7 @@
         </div>
 
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/lakes.png');
             background-attachment: fixed;
@@ -443,7 +451,7 @@
           id="lakes"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -456,13 +464,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-lakes">Lakes</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Minnesota offers some of the best freshwater fishing in the
                 country, from big lakes to scenic trout streams and the mighty
                 Missisipi.
@@ -489,7 +497,7 @@
           </div>
         </div>
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/resorts.png');
             background-attachment: fixed;
@@ -499,7 +507,7 @@
           id="resorts"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -512,13 +520,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-resorts">Resorts</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Let the stresses of everyday life melt away as you relax at one
                 of Minnesota's many resorts, where you can enjoy pristine lakes,
                 golf courses, guided fishing excursions.
@@ -545,7 +553,7 @@
           </div>
         </div>
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/parks.png');
             background-attachment: fixed;
@@ -555,7 +563,7 @@
           id="parks"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -568,13 +576,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-parks">Parks</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Minnesota is full of unforgettable campsites where you can fall
                 asleep under a stellar night sky and wake to the sound of loons.
               </p>
@@ -600,7 +608,7 @@
           </div>
         </div>
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/hiking.png');
             background-attachment: fixed;
@@ -610,7 +618,7 @@
           id="hiking"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -623,13 +631,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-hiking">Hiking</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Minnesota is Mother Nature's home state, and her influence is
                 everywhere, from native prairies in the southwestern corner of
                 the state to the mountainous.
@@ -656,7 +664,7 @@
           </div>
         </div>
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/fishing.png');
             background-attachment: fixed;
@@ -666,7 +674,7 @@
           id="fishing"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -679,13 +687,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-fishing">Fishing</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Let the stresses of everyday life melt away as you relax at one
                 of Minnesota's many resorts, where you can enjoy pristine lakes,
                 golf courses, guided fishing excursions.
@@ -712,7 +720,7 @@
           </div>
         </div>
         <div
-          class="w-4/6 h-screen ml-auto snap-center"
+          class="w-full md:w-4/6 h-screen ml-auto snap-center"
           style="
             background: url('./assets/media/skiing.png');
             background-attachment: fixed;
@@ -722,7 +730,7 @@
           id="skiing"
         >
           <div
-            class="w-full h-full flex flex-col justify-end items-end space-y-12 p-20 ml-auto"
+            class="w-full h-full flex flex-col justify-end items-end gap-4 md:gap-12 p-4 md:p-20 ml-auto"
             style="
               background: linear-gradient(
                   0deg,
@@ -735,13 +743,13 @@
             "
           >
             <div class="flex flex-col items-end text-right">
-              <div class="text-[54px] leading-none mb-5">
+              <div class="text-xl md:text-[54px] leading-none mb-5">
                 <h2 class="font-medium">
                   Explore the best <span class="text-skiing">Skiing</span> of
                 </h2>
                 <h2 class="font-[inter]">Minnesota activities</h2>
               </div>
-              <p class="max-w-[480px] text-2xl">
+              <p class="max-w-[480px] text-sm md:text-2xl">
                 Let the stresses of everyday life melt away as you relax at one
                 of Minnesota's many resorts, where you can enjoy pristine lakes,
                 golf courses, guided fishing excursions.
@@ -771,163 +779,266 @@
 
       <div class="scrollbar-hide w-full h-screen overflow-y-scroll snap-center">
         <!-- About Us -->
-        <section class="p-5" id="about">
-          <div class="mx-auto pb-12">
-            <div
-              class="min-h-[520px] flex flex-col justify-between items-end text-white text-right rounded-lg p-12 mb-12"
-              style="
-                background: linear-gradient(
-                    128deg,
-                    #e57929 -224.82%,
-                    rgba(229, 121, 41, 0) 76.39%
-                  ),
-                  linear-gradient(
-                    180deg,
-                    rgba(19, 24, 36, 0.8) -33.92%,
-                    rgba(19, 24, 36, 0) 100%
-                  ),
-                  url('./assets/media/about.png');
-                background-size: cover;
-                background-position: right;
-              "
-            >
-              <h3 class="font-bold text-[54px] leading-none">
-                Trust Minnesota <br />
-                <span class="font-medium text-4xl">
-                  for seamless holiday <br />
-                  Arrangements
-                </span>
-              </h3>
-              <img src="./assets/media/about.svg" alt="" class="h-32" />
-            </div>
-            <div class="max-w-screen-xl mx-auto">
-              <h2
-                class="max-w-[858px] font-bold text-[54px] leading-none mb-10"
-              >
-                Create extraordinary experiences that ignite your sense of
-                adventure and leave you with memories that last a lifetime
-              </h2>
+        <section class="p-2 md:p-5" id="about">
+          <div
+            class="md:min-h-[520px] flex flex-col justify-between items-end gap-4 text-white text-right rounded-lg p-4 md:p-12"
+            style="
+              background: linear-gradient(
+                  128deg,
+                  #e57929 -224.82%,
+                  rgba(229, 121, 41, 0) 76.39%
+                ),
+                linear-gradient(
+                  180deg,
+                  rgba(19, 24, 36, 0.8) -33.92%,
+                  rgba(19, 24, 36, 0) 100%
+                ),
+                url('./assets/media/about.png');
+              background-size: cover;
+              background-position: right;
+            "
+            id="about"
+          >
+            <h3 class="font-bold text-2xl md:text-[54px] leading-none">
+              Trust Minnesota <br />
+              <span class="font-medium text-base md:text-4xl">
+                for seamless holiday <br />
+                Arrangements
+              </span>
+            </h3>
+            <img src="./assets/media/about.svg" alt="" class="h-16 md:h-32" />
+          </div>
+        </section>
 
-              <div
-                class="max-w-[992px] flex flex-row space-x-12 font-medium text-lg ml-auto"
-              >
-                <p>
-                  We bundle up, head out and make the most of this magical
-                  season, whether it's on our thousands of miles of ski and
-                  snowshoe trail on top of a frozen lake
-                </p>
-                <p>
-                  From experiencing our great outdoors to urban adventures,
-                  Minnesota is full of unique vacation opportunities for every
-                  traveler. Whether you're traveling as a family, with friends,
-                  or solo, you'll find information on what to do, where to stay,
-                  and more!
-                </p>
-              </div>
+        <!-- Information -->
+        <section class="px-5 py-6 md:py-12" id="information">
+          <div class="max-w-screen-xl mx-auto">
+            <h2
+              class="max-w-[858px] font-bold text-2xl md:text-[54px] leading-none mb-10"
+            >
+              Create extraordinary experiences that ignite your sense of
+              adventure and leave you with memories that last a lifetime
+            </h2>
+
+            <div
+              class="max-w-[992px] flex flex-row space-x-12 font-medium text-xs md:text-lg ml-auto"
+            >
+              <p>
+                We bundle up, head out and make the most of this magical season,
+                whether it's on our thousands of miles of ski and snowshoe trail
+                on top of a frozen lake
+              </p>
+              <p>
+                From experiencing our great outdoors to urban adventures,
+                Minnesota is full of unique vacation opportunities for every
+                traveler. Whether you're traveling as a family, with friends, or
+                solo, you'll find information on what to do, where to stay, and
+                more!
+              </p>
             </div>
           </div>
         </section>
 
         <!-- Blog -->
-        <section class="max-w-screen-xl py-12 mx-auto" id="blog">
-          <h3 class="font-bold text-4xl mb-7">Interesting Story</h3>
-          <div class="grid grid-cols-3 gap-6">
-            <div class="blog flex flex-col gap-4 items-start">
-              <div
-                class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
-              >
-                <video class="absolute w-full h-full object-cover m-0">
-                  <source src="./assets/media/video.mp4" />
-                </video>
+        <section class="px-5 py-6 md:py-12" id="blog">
+          <div class="max-w-screen-xl mx-auto">
+            <h3 class="font-bold text-4xl mb-7">Interesting Story</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="blog flex flex-col gap-4 items-start">
                 <div
-                  class="absolute w-full h-[50%] mb-0"
-                  style="
-                    background: linear-gradient(
-                      0deg,
-                      #131824 -49.33%,
-                      rgba(19, 24, 36, 0) 100%
-                    );
-                  "
-                ></div>
-                <div class="relative text-white px-6 py-7">
-                  <div class="font-medium text-2xl">10 of Minnesota’s</div>
-                  <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
+                >
+                  <video class="absolute w-full h-full object-cover m-0">
+                    <source src="./assets/media/video.mp4" />
+                  </video>
+                  <div
+                    class="absolute w-full h-[50%] mb-0"
+                    style="
+                      background: linear-gradient(
+                        0deg,
+                        #131824 -49.33%,
+                        rgba(19, 24, 36, 0) 100%
+                      );
+                    "
+                  ></div>
+                  <div class="relative text-white px-6 py-7">
+                    <div class="font-medium text-2xl">10 of Minnesota’s</div>
+                    <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  </div>
+                </div>
+                <div class="flex flex-row items-center justify-center gap-4">
+                  <img
+                    src="./assets/media/nenek.png"
+                    alt=""
+                    class="rounded-lg"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-xl">Jessey J.</h4>
+                    <p class="font-medium text-base">Visit on 22 Jun 2023</p>
+                  </div>
                 </div>
               </div>
-              <div class="flex flex-row items-center justify-center gap-4">
-                <img src="./assets/media/nenek.png" alt="" class="rounded-lg" />
-                <div class="flex flex-col">
-                  <h4 class="font-bold text-xl">Jessey J.</h4>
-                  <p class="font-medium text-base">Visit on 22 Jun 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="blog flex flex-col gap-4 items-start">
-              <div
-                class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
-              >
-                <video class="absolute w-full h-full object-cover m-0">
-                  <source src="./assets/media/video.mp4" />
-                </video>
+              <div class="blog flex flex-col gap-4 items-start">
                 <div
-                  class="absolute w-full h-[50%] mb-0"
-                  style="
-                    background: linear-gradient(
-                      0deg,
-                      #131824 -49.33%,
-                      rgba(19, 24, 36, 0) 100%
-                    );
-                  "
-                ></div>
-                <div class="relative text-white px-6 py-7">
-                  <div class="font-medium text-2xl">10 of Minnesota’s</div>
-                  <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
+                >
+                  <video class="absolute w-full h-full object-cover m-0">
+                    <source src="./assets/media/video.mp4" />
+                  </video>
+                  <div
+                    class="absolute w-full h-[50%] mb-0"
+                    style="
+                      background: linear-gradient(
+                        0deg,
+                        #131824 -49.33%,
+                        rgba(19, 24, 36, 0) 100%
+                      );
+                    "
+                  ></div>
+                  <div class="relative text-white px-6 py-7">
+                    <div class="font-medium text-2xl">10 of Minnesota’s</div>
+                    <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  </div>
+                </div>
+                <div class="flex flex-row items-center justify-center gap-4">
+                  <img
+                    src="./assets/media/nenek.png"
+                    alt=""
+                    class="rounded-lg"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-xl">Jessey J.</h4>
+                    <p class="font-medium text-base">Visit on 22 Jun 2023</p>
+                  </div>
                 </div>
               </div>
-              <div class="flex flex-row items-center justify-center gap-4">
-                <img src="./assets/media/nenek.png" alt="" class="rounded-lg" />
-                <div class="flex flex-col">
-                  <h4 class="font-bold text-xl">Jessey J.</h4>
-                  <p class="font-medium text-base">Visit on 22 Jun 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="blog flex flex-col gap-4 items-start">
-              <div
-                class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
-              >
-                <video class="absolute w-full h-full object-cover m-0">
-                  <source src="./assets/media/video.mp4" />
-                </video>
+              <div class="blog flex flex-col gap-4 items-start">
                 <div
-                  class="absolute w-full h-[50%] mb-0"
-                  style="
-                    background: linear-gradient(
-                      0deg,
-                      #131824 -49.33%,
-                      rgba(19, 24, 36, 0) 100%
-                    );
-                  "
-                ></div>
-                <div class="relative text-white px-6 py-7">
-                  <div class="font-medium text-2xl">10 of Minnesota’s</div>
-                  <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  class="relative w-full aspect-[2/3] flex flex-col justify-end rounded-lg overflow-hidden"
+                >
+                  <video class="absolute w-full h-full object-cover m-0">
+                    <source src="./assets/media/video.mp4" />
+                  </video>
+                  <div
+                    class="absolute w-full h-[50%] mb-0"
+                    style="
+                      background: linear-gradient(
+                        0deg,
+                        #131824 -49.33%,
+                        rgba(19, 24, 36, 0) 100%
+                      );
+                    "
+                  ></div>
+                  <div class="relative text-white px-6 py-7">
+                    <div class="font-medium text-2xl">10 of Minnesota’s</div>
+                    <h4 class="font-bold text-4xl">Top Hiking Trails</h4>
+                  </div>
                 </div>
-              </div>
-              <div class="flex flex-row items-center justify-center gap-4">
-                <img src="./assets/media/nenek.png" alt="" class="rounded-lg" />
-                <div class="flex flex-col">
-                  <h4 class="font-bold text-xl">Jessey J.</h4>
-                  <p class="font-medium text-base">Visit on 22 Jun 2023</p>
+                <div class="flex flex-row items-center justify-center gap-4">
+                  <img
+                    src="./assets/media/nenek.png"
+                    alt=""
+                    class="rounded-lg"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-xl">Jessey J.</h4>
+                    <p class="font-medium text-base">Visit on 22 Jun 2023</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- Instagram -->
+        <section
+          class="grid grid-cols-2 md:grid-cols-9 gap-2 md:gap-3 px-2 md:px-5 py-2 md:py-12"
+        >
+          <div
+            class="md:h-[470px] max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-2 md:row-span-2 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-2 md:row-span-1 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-3 md:row-span-1 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-2 md:row-span-2 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-3 md:row-span-1 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:aspect-[1/1] flex odd:items-end even:items-start md:col-span-2 row-span-1 bg-[url('./assets/media/instagram1.png')] bg-cover bg-center p-3 rounded-lg"
+          >
+            <div
+              class="flex flex-row items-center gap-2 backdrop-blur-xs px-2.5 py-2 rounded"
+              style="background: rgba(19, 24, 36, 0.4)"
+            >
+              <img src="./assets/media/instagram.png" alt="" class="w-4 h-4" />
+              <div class="font-medium text-xs text-white leading-[120%]">
+                @simon
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+
         <!-- Footer -->
         <footer
-          class="text-white px-36 pt-16 pb-12"
+          class="text-white px-5 pt-16 pb-12"
           style="
             background: linear-gradient(
                 140deg,
@@ -944,55 +1055,57 @@
             background-size: cover;
           "
         >
-          <div
-            class="flex flex-row items-center justify-center space-x-8 font-bold text-[54px] mx-auto mb-5"
-          >
-            <h2 class="w-[300px] text-right">Discovering</h2>
-            <img src="./assets/media/logo.svg" alt="" class="h-32" />
-            <h2 class="w-[300px]">Minnesota</h2>
-          </div>
-          <div
-            class="max-w-screen-xl flex flex-row justify-between text-center border-y-4 border-gray py-8 mb-8"
-          >
-            <div class="max-w-[260px] flex flex-col space-y-8">
-              <h4 class="font-bold text-2xl">Company</h4>
-              <ul class="flex flex-col space-y-4 text-lg">
-                <li>121 7th Place E, Suite 360 St. Paul, MN 55101</li>
-                <li>
-                  <a href="">+1-651-556-8465</a>
-                </li>
-                <li>
-                  <a href="">discovering@minnesota.com</a>
-                </li>
-              </ul>
+          <div class="max-w-screen-lg mx-auto">
+            <div
+              class="flex flex-row items-center justify-center gap-8 font-bold text-[54px] mx-auto mb-5"
+            >
+              <h2 class="hidden md:block w-[300px] text-right">Discovering</h2>
+              <img src="./assets/media/logo.svg" alt="" class="h-32" />
+              <h2 class="hidden md:block w-[300px]">Minnesota</h2>
             </div>
+            <div
+              class="max-w-screen-xl flex flex-row flex-wrap justify-center md:justify-between gap-7 text-center border-y-4 border-gray py-8 mb-8"
+            >
+              <div class="max-w-[260px] flex flex-col space-y-8">
+                <h4 class="font-bold text-2xl">Company</h4>
+                <ul class="flex flex-col space-y-4 text-lg">
+                  <li>121 7th Place E, Suite 360 St. Paul, MN 55101</li>
+                  <li>
+                    <a href="">+1-651-556-8465</a>
+                  </li>
+                  <li>
+                    <a href="">discovering@minnesota.com</a>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="max-w-[260px] flex flex-col space-y-8">
-              <h4 class="font-bold text-2xl">Others</h4>
-              <ul class="flex flex-col space-y-4 text-lg">
-                <li>Privacy Policy</li>
-                <li>Cookie Settings</li>
-                <li>Terms and Condition</li>
-                <li>GDPR FaQ</li>
-              </ul>
+              <div class="max-w-[260px] flex flex-col space-y-8">
+                <h4 class="font-bold text-2xl">Others</h4>
+                <ul class="flex flex-col space-y-4 text-lg">
+                  <li>Privacy Policy</li>
+                  <li>Cookie Settings</li>
+                  <li>Terms and Condition</li>
+                  <li>GDPR FaQ</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="w-fit mx-auto">
-            <div class="flex flex-row justify-center space-x-6 mb-8">
-              <a href="">
-                <img src="./assets/media/Facebook.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./assets/media/Twitter.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./assets/media/Linkedin.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./assets/media/Instagram.svg" alt="" />
-              </a>
+            <div class="w-fit mx-auto">
+              <div class="flex flex-row justify-center space-x-6 mb-8">
+                <a href="">
+                  <img src="./assets/media/Facebook.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/media/Twitter.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/media/Linkedin.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/media/Instagram.svg" alt="" />
+                </a>
+              </div>
+              <div>©Copyright Discovering Minnesota 2023</div>
             </div>
-            <div>©Copyright Discovering Minnesota 2023</div>
           </div>
         </footer>
       </div>
@@ -1001,5 +1114,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./assets/script/smooth.js"></script>
     <script src="./assets/script/level.js"></script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>

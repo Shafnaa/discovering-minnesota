@@ -11,6 +11,9 @@ tailwind.config = {
         fishing: "#4B96DB",
         skiing: "#7E53B4",
       },
+      backdropBlur: {
+        xs: "2px",
+      },
     },
   },
 };

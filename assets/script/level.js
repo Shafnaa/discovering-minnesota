@@ -4,7 +4,7 @@ const nav = services.querySelector("#navigation");
 const navLi = nav.querySelectorAll("div");
 
 services.onscroll = () => {
-  const sectionScrolled = (services.scrollTop / services.scrollHeight) * 100;
+  // const sectionScrolled = (services.scrollTop / services.scrollHeight) * 100;
   var current = "";
 
   sections.forEach((section) => {
@@ -14,7 +14,7 @@ services.onscroll = () => {
     }
   });
 
-  nav.style.transform = `translateY(-${sectionScrolled}%)`;
+  // nav.style.transform = `translateY(-${sectionScrolled}%)`;
 
   navLi.forEach((li) => {
     li.classList.remove("active");
