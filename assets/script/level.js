@@ -1,7 +1,7 @@
 const services = document.querySelector("#services");
 const sections = services.querySelectorAll(".h-screen");
 const nav = services.querySelector("#navigation");
-const navLi = nav.querySelectorAll("div.flex.items-center.gap-8");
+const navLi = nav.querySelectorAll("div.flex.items-center.gap-3");
 
 services.onscroll = () => {
   // const sectionScrolled = (services.scrollTop / services.scrollHeight) * 100;

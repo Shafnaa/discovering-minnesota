@@ -42,7 +42,7 @@ body {
   font-size: 52px !important;
 }
 
-.active div.w-12.h-12 {
+.active div.w-7.h-7 {
   width: 140px !important;
   height: 160px !important;
   padding: 12px;
@@ -55,4 +55,35 @@ body {
 
 .current {
   color: white !important;
+}
+
+.services-gradient {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 24, 36, 0.5) 0%,
+      rgba(19, 24, 36, 0.5) 100%
+    ),
+    linear-gradient(87deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .active div h2 {
+    font-size: 24px !important;
+  }
+
+  .active div.w-7.h-7 {
+    width: 64px !important;
+    height: 70px !important;
+  }
+
+  .services-gradient {
+    background: linear-gradient(
+        0deg,
+        rgba(19, 24, 36, 0.5) 0%,
+        rgba(19, 24, 36, 0.5) 100%
+      ),
+      linear-gradient(180deg, #131824 8%, rgba(19, 24, 36, 0) 88.82%);
+  }
 }
