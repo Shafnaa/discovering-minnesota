@@ -31,7 +31,11 @@ body {
 }
 
 .active {
-  color: white !important;
+  background: linear-gradient(
+    90deg,
+    currentColor -2.3%,
+    rgba(35, 43, 62, 0) 96.42%
+  );
 }
 
 .active div h2 {
@@ -39,11 +43,16 @@ body {
 }
 
 .active div.w-12.h-12 {
-  width: 100px !important;
-  height: 100px !important;
+  width: 140px !important;
+  height: 160px !important;
+  padding: 12px;
 }
 
 .active-nav {
   background: white;
   color: #131824;
+}
+
+.current {
+  color: white !important;
 }
